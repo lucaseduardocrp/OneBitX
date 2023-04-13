@@ -74,29 +74,24 @@
     background-color: #000;
  }
 
- .downloadDesc{
-    background-color: #000;
-    height: 85vh;
-    padding-top: 240px;
-
-    a{
-        text-decoration: none;
-        color: $white-color;
-        border-bottom: 1px solid $white-color;
-
-        &:hover{
-            border-bottom: 1px solid $link-hover;
-            color: $link-hover;
-        }
-    }
-
-    button{
-        border: 2px solid #fff;
-        margin-right: 15px;
-    }
- }
-
 // Media Query
+
+@media (max-width: 1024px) {
+    .numbers {
+      p {
+        font-size: 18px;
+      }
+    }
+    .falcon9Desc {
+      font-size: 26px;
+    }
+    #overViewPosition {
+      display: block;
+      width: 500px;
+      margin-left: 13%;
+      padding-top: 20%;
+    }
+}
 
 @media (max-width: 768px){
     .numbers{
@@ -117,6 +112,58 @@
      }
 }
 
-@media (max-width: 575){
-    
+@media (max-width: 650px) {
+    .titleContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 80vh;
+    }
+    .titleFalcon9 {
+      font-size: 50px;
+    }
+    .numbers {
+        height: 60vh;
+
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .containerFalcon9Desc {
+      p {
+        width: auto;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+    #overViewPosition {
+      display: flex;
+      height: 90vh;
+      flex-direction: column;
+      justify-content: center;
+      width: auto;
+      margin-left: auto;
+    }
+    .titleOverView {
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .subTitleOvewView {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+  
+@media (max-width: 375px){
+    .titleFalcon9{
+        font-size: 50px;
+    }
+
+    .falcon9Desc{
+        font-size: 18px;
+        line-height: auto;
+    }
 }
